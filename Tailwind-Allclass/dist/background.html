@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <h2 class="text-5xl">Background Attachment</h2>
+    <div class="w-full bg-no-repeat bg-cover bg-fixed" style="background-image: url(../dist/img/nature.jpg); height: 700px;"></div>
+
+    <p class="text-5xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem harum alias illum reprehenderit sit cupiditate, rerum ratione suscipit, iusto optio voluptas ipsa maxime incidunt adipisci! Et consequuntur vitae veritatis quo incidunt hic quisquam quis, explicabo, nostrum autem, atque non provident minus asperiores magni. Cumque error dolore iusto rem illum qui dolor quidem, consequatur accusantium minima molestiae eligendi. Velit voluptate rem assumenda dicta, consequatur neque! Commodi hic sit provident, delectus necessitatibus magnam at placeat. Dicta, quas nulla error molestiae id nihil ratione dolore voluptatum quisquam itaque vitae, consequuntur necessitatibus eum quia vero minima laboriosam reprehenderit explicabo hic. Sed accusamus eaque quas?</p>
+
+     <div class="w-full bg-no-repeat bg-cover bg-local" style="background-image: url(../dist/img/nature.jpg); height: 700px; overflow-y: scroll;">
+        <p class="text-5xl p-52">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem harum alias illum reprehenderit sit cupiditate, rerum ratione suscipit, iusto optio voluptas ipsa maxime incidunt adipisci! Et consequuntur  Dicta, quas nulla error molestiae id nihil ratione dolore voluptatum quisquam itaque vitae, consequuntur necessitatibus eum quia vero minima laboriosam reprehenderit explicabo hic. Sed accusamus eaque quas?</p>
+    </div>
+
+    <div class="w-full bg-no-repeat bg-cover bg-scroll" style="background-image: url(../dist/img/nature.jpg); height: 700px; overflow-y: scroll;">
+        <p class="text-5xl p-52">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem harum alias illum reprehenderit sit cupiditate, rerum ratione suscipit, iusto optio voluptas ipsa maxime incidunt adipisci! Et consequuntur  Dicta, quas Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem harum alias illum reprehenderit sit cupiditate, rerum ratione suscipit, iusto optio voluptas ipsa maxime incidunt adipisci! Et consequuntur  Dicta, quasnulla error molestiae id nihil ratione dolore voluptatum quisquam itaque vitae, consequuntur necessitatibus eum quia vero minima laboriosam reprehenderit explicabo hic. Sed accusamus eaque quas?</p>
+    </div>
+    
+    <h2 class="text-5xl">Background Clip</h2>
+    <div class="bg-violet-500 m-4 bg-clip-border border-4 border-dashed" style="width:100px; height: 100px;"></div>
+
+    <div class="bg-violet-500 m-4 bg-clip-padding border-4 border-dashed" style="width:100px; height: 100px;"></div>
+
+    <div class="bg-violet-500 m-4 bg-clip-content border-4 border-dashed p-4" style="width:100px; height: 100px;"></div>
+
+
+    <div class="m-4 bg-clip-border border-4 border-dashed bg-left" style="background-image: url(../dist/img/nature.jpg); width: 100px; height: 100px;"></div>
+
+    <div class="m-4 bg-clip-padding border-4 border-dashed bg-bottom" style="background-image: url(../dist/img/nature.jpg); width: 100px; height: 100px;"></div>
+
+    <div class="m-4 bg-clip-content border-4 border-dashed p-4 bg-right" style="background-image: url(../dist/img/nature.jpg); width: 100px; height: 100px;"></div>
+
+    <span class="bg-gradient-to-r from-teal-500 to-slate-500 text-transparent bg-clip-text text-7xl">Hello World</span>
+
+    <div class="m-4 bg-left" style="background-image: url(../dist/img/nature.jpg); width: 100px; height: 100px;"></div>
+
+    <h2 class="text-5xl">Background Size</h2>
+
+    <div class="m-4 bg-no-repeat bg-cover" style="background-image: url(../dist/img/nature.jpg); width: 100%; height: 700px;"></div>
+
+    <div class="m-4 bg-no-repeat bg-contain" style="background-image: url(../dist/img/nature.jpg); width: 100%; height: 700px;"></div>
+
+
+    <h2 class="text-5xl text-bold">Border Radius</h2>
+    <div class="bg-emerald-600 m-4 rounded-t-lg" style="width: 100px; height: 100px;"></div>
+
+    <h2 class="text-5xl text-bold">Border Width</h2>
+    <div class="border-rose-500 border-2 m-4 border-dotted" style="width: 100px; height: 100px;"></div>
+    <div class="border-rose-500 border-4 m-4" style="width: 100px; height: 100px;"></div>
+    <div class="border-rose-500 border-8 m-4" style="width: 100px; height: 100px;"></div>
+
+    <h2 class="text-5xl text-bold">Divide Width-color-style</h2>
+    <div class="flex flex-col-reverse divide-y divide-y-reverse  bg-gradient-to-r from-neutral-800 from-violet-600 divide-sky-700 divide-dashed text-white w-96 text-center">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+
+    <div class="grid grid-cols-3 divide-x bg-blue-900 text-white mt-2 text-center divide-purple-400">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+
+    <h2 class="text-5xl text-bold">Outline-width-color-style-offset</h2>
+    <button class="from-rose-400 to-sky-800 bg-gradient-to-r text-white p-4 m-5 rounded-xl outline outline-offset-2 outline-2 outline-purple-600 outline-dashed">Click Now</button>
+
+    <h2 class="text-5xl text-bold">Ring</h2>
+    <button class="bg-slate-700 p-4 m-5 text-white rounded-xl ring ring-cyan-500 ring-offset-4 ring-offset-slate-500">RING WIDTH</button>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    
+
+    <h1 class="text-5xl">Shadow</h1>
+
+    
+    <div class="shadow-inner w-32 h-32 m-5 shadow-purple-500 opacity-80"></div>
+    <div class="shadow-lg w-32 h-32 m-5 shadow-amber-300"></div>
+    <div class="shadow-xl w-32 h-32 m-5"></div>
+    <div class="shadow-2xl w-32 h-32 m-5 shadow-cyan-900 opacity-40"></div>
+
+    <h1 class="text-5xl">Mix blend mode</h1>
+
+    <div class="flex">
+        <div class="w-32 h-32 bg-green-700 rounded-full m-5 mix-blend-color-dodge"></div>
+    <div class="w-32 h-32 bg-rose-600 rounded-full m-5 -translate-x-28 mix-blend-color-dodge"></div>
+    </div>
+
+    <div class="flex">
+        <div class="w-32 h-32 bg-green-700 rounded-full m-5 mix-blend-lighten"></div>
+    <div class="w-32 h-32 bg-rose-600 rounded-full m-5 -translate-x-28 mix-blend-lighten"></div>
+    </div>
+
+    <h1 class="text-5xl">Background blend mode</h1>
+    <div style="background: url(img/2.jpeg),rgba(0,0,0,0.5); background-repeat: no-repeat; background-size: cover;" class="w-96 h-96 bg-blend-saturation"></div>
+
+    <div style="background: url(img/2.jpeg),rgba(0,0,0,0.5); background-repeat: no-repeat; background-size: cover;" class="w-96 h-96 bg-blend-darken"></div>
+
+    <div style="background: url(img/2.jpeg),rgba(0,0,0,0.5); background-repeat: no-repeat; background-size: cover;" class="w-96 h-96 bg-blend-screen"></div>
+    <div style="background: url(img/2.jpeg),rgba(0,0,0,0.5); background-repeat: no-repeat; background-size: cover;" class="w-96 h-96 bg-blend-soft-light"></div>
+    <div style="background: url(img/2.jpeg),rgba(0,0,0,0.5); background-repeat: no-repeat; background-size: cover;" class="w-96 h-96 bg-blend-hard-light"></div>
+    
+
+    <h1 class="text-5xl">filter</h1>
+    <p>Blur</p>
+    <div style="background-image: url(img/1.webp);" class="w-96 h-96 hover:blur-sm transition-all"></div>
+
+    <p>Brightness</p>
+    <div style="background-image: url(img/1.webp);" class="w-96 h-96 brightness-200"></div>
+
+    <p>Contrast</p>
+    <div style="background-image: url(img/1.webp);" class="w-96 h-96 contrast-150"></div>
+    
+    <p>Drop shadow</p>
+    <div style="background-image: url(https://gallery.yopriceville.com/var/albums/Free-Clipart-Pictures/Cartoons-PNG/Cute_Cartoon_Elephant_Free_PNG_Picture.png?m=1629784874);" class="w-96 h-96 bg-cover bg-center drop-shadow-2xl "></div>
+
+    <p>Grayscale</p>
+    <div style="background-image: url(img/3.jpg);" class="w-96 h-96 bg-cover grayscale"></div>
+
+    <p>Hue rotate</p>
+    <div style="background-image: url(img/3.jpg);" class="w-96 h-96 bg-cover hue-rotate-60"></div>
+
+    <p>invert</p>
+    <div style="background-image: url(img/3.jpg);" class="w-96 h-96 bg-cover invert"></div>
+
+    <p>saturate</p>
+    <div style="background-image: url(img/3.jpg);" class="w-96 h-96 bg-cover saturate-50"></div>
+
+    <p>sepia</p>
+    <div style="background-image: url(img/3.jpg);" class="w-96 h-96 bg-cover sepia"></div>
+
+    <p>Backdrop Blur</p>
+     <div class="relative">
+    <div class="backdrop-blur-sm w-32 h-32 absolute top-0 start-0"></div>
+    <img src="img/1.webp" class="w-96 h-96"/>
+    </div>
+
+    <p>Backdrop Brightness</p>
+    <div class="relative">
+   <div class="backdrop-brightness-50 w-32 h-32 absolute top-0 start-0"></div>
+   <img src="img/1.webp" class="w-96 h-96"/>
+   </div>
+
+   <p>Backdrop Contrast</p>
+    <div class="relative">
+   <div class="backdrop-contrast-50 w-32 h-32 absolute top-0 start-0"></div>
+   <img src="img/1.webp" class="w-96 h-96"/>
+   </div>
+
+   <p>Backdrop Grayscale</p>
+    <div class="relative">
+   <div class="backdrop-grayscale w-32 h-32 absolute top-0 start-0"></div>
+   <img src="img/1.webp" class="w-96 h-96"/>
+   </div>
+
+   <p>Backdrop Hue rotate</p>
+    <div class="relative">
+   <div class="backdrop-hue-rotate-60 w-32 h-32 absolute top-0 start-0"></div>
+   <img src="img/1.webp" class="w-96 h-96"/>
+   </div>
+
+   <p>Backdrop Invert</p>
+    <div class="relative">
+   <div class="backdrop-invert w-32 h-32 absolute top-0 start-0"></div>
+   <img src="img/1.webp" class="w-96 h-96"/>
+   </div>
+
+   <p>Backdrop opacity</p>
+    <div class="relative">
+   <div class="backdrop-opacity-100 w-32 h-32 absolute top-0 start-0"></div>
+   <img src="img/1.webp" class="w-96 h-96"/>
+   </div>
+
+   <p>Backdrop saturate</p>
+    <div class="relative">
+   <div class="backdrop-saturate-50 w-32 h-32 absolute top-0 start-0"></div>
+   <img src="img/1.webp" class="w-96 h-96"/>
+   </div>
+
+   <p>Backdrop sepia</p>
+    <div class="relative">
+   <div class="backdrop-sepia w-32 h-32 absolute top-0 start-0"></div>
+   <img src="img/1.webp" class="w-96 h-96"/>
+   </div>
+   
+
+    
+</body>
+</html>

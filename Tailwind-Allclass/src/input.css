@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face{
+    font-family: "CustomFont";
+    src: url('dist\Roboto\Roboto-Bold.ttf')
+    format('truetype');
+}
